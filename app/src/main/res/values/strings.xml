@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PolantasSigap-New</string>
+    <string name="lapor_sigap_title">Lapor Sigap</string>
+    <string name="hadir_sigap_title">Hadir Sigap</string>
+    <string name="office_sigap_title">Office Sigap</string>
+    <string name="info_sigap_title">Info Sigap</string>
+    <string name="sakpole_title">Sakpole</string>
+    <string name="barbuk_title">Barbuk Sigap</string>
+    <string name="delivery_title">Bhara Delivery</string>
+
+    <string name="bayar_pajak_title">Bayar Pajak</string>
+    <string name="cek_status_valid_title">Cek Status Validasi</string>
+    <string name="lupa_kode_bayar_title">Lupa Kode Bayar</string>
+    <string name="ganti_cara_bayar_title">Ganti Cara Bayar</string>
+    <string name="status_bayar_title">Status Pembayaran</string>
+    <string name="unduh_etbpkp_title">Unduh E-TBPKP</string>
+    <string name="epengesahan_title">Permohonan E-Pengesahan</string>
+    <string name="edelivery_sigap_title">Pelacakan Pengiriman Bukti E-TLE</string>
+</resources>

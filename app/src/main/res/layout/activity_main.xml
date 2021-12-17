@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgorund"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".23"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/top_bg_asset"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline23"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/duty_user_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/dummy_image"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/menu_greeting_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/duty_user_profile"
+        app:layout_constraintTop_toTopOf="@id/duty_user_profile" />
+
+    <TextView
+        android:id="@+id/duty_user_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:drawablePadding="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/nunito"
+        android:gravity="center|start"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_location"
+        app:drawableTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/duty_user_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/duty_user_profile"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/menu_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:elevation="3dp"
+        android:background="@drawable/shape_rectangle_menu_white_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline23"
+        app:layout_constraintTop_toTopOf="@+id/guideline23">
+
+        <TextView
+            android:id="@+id/menu_lapor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            app:drawableTopCompat="@drawable/ic_sax_edit"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="14sp"
+            android:text="@string/lapor_sigap_title"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/menu_hadir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:drawableTopCompat="@drawable/ic_sax_profile_twin_user"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="14sp"
+            android:text="@string/hadir_sigap_title"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/menu_office"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            app:drawableTopCompat="@drawable/ic_sax_bank"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="14sp"
+            android:text="@string/office_sigap_title"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        layout="@layout/layout_bottomsheet"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
